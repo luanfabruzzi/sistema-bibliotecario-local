@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Livros - Biblioteca Online</title>
+  <link rel="icon" href="../imagens/LOGO PNG_1761259869505.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <button class="toggle-btn" onclick="alternarMenu()">
+      <i class="bi bi-list"></i>
+    </button>
+    <h1>Livros Cadastrados</h1>
+  </header>
+
+  <nav class="menuV">
+    <ul>
+      <li><a href="PaginaDirecao.html">Voltar</a></li>
+      <li><a href="../php/direcao.php?action=logout">Sair</a></li>
+    </ul>
+  </nav>
+
+  <main class="conteudo" style="max-width: 1200px;">
+    <div class="mb-4">
+      <h2>Total de Livros: <span id="totalLivros" class="badge bg-primary">0</span></h2>
+    </div>
+    
+    <div id="tabelaLivros" class="mt-4">
+      <div class="table-responsive">
+        <table id="listaLivros" class="table table-dark table-striped"> 
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Indicação</th>
+            <th>Disciplina</th>
+            <th>Status</th>
+            <th>Data Cadastro</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div id="mensagem" style="color: white; text-align: center; margin-top: 10px;"></div>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <h5>Equipe de Desenvolvimento</h5>
+      <p><strong>Diretor do projeto e desenvolvedor central FULL-STACK:</strong> Luan de Assis Fabruzzi Rosa</p>
+      <div class="rodape-links">
+        <a href="#">Contato</a> | <a href="#">Sobre</a> | <a href="#">Termos de Uso</a>
+      </div>
+      <p class="assinatura">© 2025 Biblioteca Online INAH DE MELLO. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../js/lista_livros.js"></script>
+</body>
+</html>
