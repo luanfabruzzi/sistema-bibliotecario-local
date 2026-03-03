@@ -49,14 +49,19 @@ A aplicação usa o padrão **MVC** (Model‑View‑Controller) de forma mínima
 ## Como executar
 
 1. Navegue até a pasta do projeto (contendo o `.csproj`).
-2. Restaure e compile:
+2. Restaure e compile (a partir da pasta que contém o `.csproj`):
    ```powershell
+   cd BibliotecaApi\BibliotecaApi      # apenas se estiver na raiz do repositório
    dotnet restore
    dotnet build
    ```
 3. Execute a API:
    ```powershell
    dotnet run
+   ```
+   Se preferir iniciar o projeto a partir da raiz do repositório, indique o caminho ao arquivo de projeto:
+   ```powershell
+   dotnet run --project "BibliotecaApi/BibliotecaApi/BibliotecaApi.csproj"
    ```
    por padrão, a aplicação ficará disponível em `http://localhost:5162` e `https://localhost:7245`.
 4. Use ferramentas como `curl`, Postman ou o frontend estático incluído no repositório para testar os endpoints.
